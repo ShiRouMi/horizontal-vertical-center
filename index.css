@@ -1,0 +1,74 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+  height: 40px;
+  line-height: 40px;
+}
+h2 {
+  text-align: center
+}
+.content {
+  width: 1000px;
+  margin: 0 auto;
+}
+.content h3 {
+  color: #f13c36;
+}
+.example2 {
+  margin: 50px;
+  width: 500px;
+  height: 500px;
+  border: 1px solid #ccc;
+}
+
+.example2 div {
+  width: 200px;
+  height: 200px;
+  background: rgb(238, 89, 89);
+}
+
+
+/* 需要父元素line-height 与 height 一致前提下， 子元素 inline-block 并且 vertical-align: middle; */
+
+.box_lineheight {
+  text-align: center;
+  line-height: 500px;
+}
+.box_lineheight div {
+  /* !! 设置为初始*/
+  line-height: initial; 
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* 子元素相对父元素绝对定位， 以及负margin */
+
+.box_absolute {
+  position: relative;
+  
+}
+.box_absolute div {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -100px;
+  margin-top: -100px;
+}
+
+/* 注意： 子元素 上下左右绝对定位皆为0的情况下 margin: auto */
+
+.box_absolute_margin {
+  position: relative;
+}
+.box_absolute_margin div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
