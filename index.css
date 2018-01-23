@@ -72,3 +72,59 @@ h2 {
   bottom: 0;
   margin: auto;
 }
+
+/* absolute tranlate */
+
+.box_absolute_transform {
+  position: relative;
+}
+.box_absolute_transform div {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+ /* fex */
+
+.box_flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* 会计算的css属性 */
+
+.box_absolute_calc {
+  position: relative;
+}
+.box_absolute_calc div {
+  position: absolute;
+  margin: calc(50% - 100px); 
+  /* 或者是  */
+  /* 
+    top: calc(50% - 100px); 
+    left: calc(50% - 100px);  
+  */
+}
+
+/* table-cell属性下 margin 失效 float position:absolute 失效 */
+.box_table {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+.box_table div {
+  display: inline-block;
+}
+
+/* grid */
+
+.box_grid {
+  display: grid;
+}
+.box_grid div {
+  align-self: center;
+  justify-self: center;
+}
