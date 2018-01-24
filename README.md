@@ -20,7 +20,7 @@
   - 单行： 设置上下 `pandding` 相等；或者设置 `line-height` 和 `height` 相等
   - 多行：设置上下 `pandding` 相等；或者设置 `display: table-cell;` 和 `vertical-align: middle;`；或者使用 `flex` 布局；或者使用`伪元素`
 * 对于块状元素（block）
-  - 已知高度：子元素使用绝对布局 `top: 50%;`，再用`负的 margin-top` 把子元素往上拉一半的高度
+  - 已知高度：子元素使用绝对布局 `top: 50%;`，再用`负的 margin-top` (子元素高度的一半)
   - 未知高度：子元素使用绝对布局 `position: absolute; top: 50%; transform: translateY(-50%);`
 
 
