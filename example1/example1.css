@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+  height: 40px;
+  line-height: 40px;
+}
+h2 {
+  text-align: center
+}
+.content {
+  width: 1000px;
+  margin: 0 auto;
+}
+.content h3 {
+  color: #f13c36;
+}
+.example1 div {
+  width: 200px;
+  height: 200px;
+  background: #f13c36;
+}
+.box_absolute_transform {
+  text-align: center;
+}
+.box_absolute_transform div {
+  position: absolute;
+  display: inline-block;
+  top:50%;
+  transform: translateY(-50%) translateX(-50%);
+}
